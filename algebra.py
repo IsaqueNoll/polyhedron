@@ -1,21 +1,20 @@
 #coding: utf-8
+
 #imports
 
 
 #fraction class
 class fraction():
     def __init__(self, numerator = 1, denominator = 1):
-        self.numerator = numerator
-        self.denominator = denominator
+        self.numeratorValue = numerator
+        self.denominatorValue = denominator
 
     def setNumerator(self, value):
-        self.numerator = value
-
-    def numerator(self):
-        return self.numerator
+        self.numeratorValue = value
 
     def setDenominator(self, value):
-        self.denominator = value
+        self.denominatorValue = value
 
-    def denominator(self):
-        return self.denominator
+    def decimalApproximation(self):
+        return float(self.numeratorValue)/float(self.denominatorValue)
+
